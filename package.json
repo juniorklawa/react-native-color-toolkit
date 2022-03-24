@@ -1,0 +1,32 @@
+{
+  "name": "react-native-colors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsx-bundler src/index.tsx --outDir dist"
+  },
+  "keywords": [
+    "colors",
+    "react-native",
+    "manipulation",
+    "filters",
+    "darken",
+    "lighten",
+    "tint",
+    "shade",
+    "blend",
+    "mix",
+    "tinting",
+    "shading",
+    "blending",
+    "mixing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "typescript": "^4.6.2"
+  }
+}
