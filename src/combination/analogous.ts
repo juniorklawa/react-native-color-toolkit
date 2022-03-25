@@ -2,6 +2,11 @@ import hexToRgb from "../conversion/hexToRgb";
 import hslToHex from "../conversion/hslToHex";
 import rgbToHsl from "../conversion/rgbToHsl";
 
+/**
+ * Returns an array of colors that are analogous to the given color.
+ * @param  {String} color The first number
+ * @return {Array} An array of colors that are analogous to the given color.
+ */
 const analogous = (color: string) => {
   const { r, g, b } = hexToRgb(color);
   const { h, s, l } = rgbToHsl(r, g, b);
