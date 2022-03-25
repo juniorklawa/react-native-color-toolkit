@@ -1,5 +1,7 @@
-import {desaturate} from './desaturate';
+import { desaturate } from "..";
 
-export const greyscale = (color: string) => {
+const greyscale = (color: string) => {
   return desaturate(color, 1);
 };
+
+export default greyscale;

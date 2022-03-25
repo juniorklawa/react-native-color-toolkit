@@ -1,10 +1,10 @@
-import hexToRgb from '../conversion/hexToRgb';
-import hslToHex from '../conversion/hslToHex';
-import rgbToHsl from '../conversion/rgbToHsl';
+import hexToRgb from "../conversion/hexToRgb";
+import hslToHex from "../conversion/hslToHex";
+import rgbToHsl from "../conversion/rgbToHsl";
 
-export const tetrad = (color: string) => {
-  const {r, g, b} = hexToRgb(color);
-  const {h, s, l} = rgbToHsl(r, g, b);
+const tetrad = (color: string) => {
+  const { r, g, b } = hexToRgb(color);
+  const { h, s, l } = rgbToHsl(r, g, b);
   const newHue = h;
 
   const secondaryColor = hslToHex((newHue + 90) % 360, s, l);
@@ -13,3 +13,5 @@ export const tetrad = (color: string) => {
 
   return [color, secondaryColor, terciaryColor, quaternaryColor];
 };
+
+export default tetrad;
