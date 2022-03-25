@@ -1,3 +1,4 @@
+import Colors from "./colors";
 import analogous from "./combination/analogous";
 import complement from "./combination/complement";
 import monochromatic from "./combination/monochromatic";
@@ -57,4 +58,6 @@ export {
   isLight,
   random,
   setHexColorAlpha,
+  // Colors
+  Colors,
 };

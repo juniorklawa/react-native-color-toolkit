@@ -2,8 +2,8 @@
 
 ## TODO
 
+ - [x] Add Material Colors Pallete
+ - [ ] Add function documentation
  - [ ] Add tests
  - [ ] Add react native example
- - [ ] Add Material Colors Pallete
- - [ ] Add functio documentation
 
