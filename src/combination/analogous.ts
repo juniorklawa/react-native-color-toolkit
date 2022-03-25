@@ -4,7 +4,7 @@ import rgbToHsl from "../conversion/rgbToHsl";
 
 /**
  * Returns an array of colors that are analogous to the given color.
- * @param  {String} color The first number
+ * @param  {String} color A 6 character hex color.
  * @return {Array} An array of colors that are analogous to the given color.
  */
 const analogous = (color: string) => {
