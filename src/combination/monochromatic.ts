@@ -3,6 +3,10 @@ import hslToHex from "../conversion/hslToHex";
 import rgbToHsl from "../conversion/rgbToHsl";
 import getNewPercentage from "../utilities/getRelativePercentage";
 
+/**
+ * @param  {String} color A 6 character hex color.
+ * @return {Array} An array of colors that are monochromatic to the given color.
+ */
 const monochromatic = (color: string) => {
   const pieces = 6;
   const { r, g, b } = hexToRgb(color);

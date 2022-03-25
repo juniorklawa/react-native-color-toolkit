@@ -1,3 +1,13 @@
+/**
+ * Convert an RGB color to a HSL color.
+ * @param  {Number} r The red value of the color.
+ * @param  {Number} g The green value of the color.
+ * @param  {Number} b The blue value of the color.
+ * @return {Object} An object with the following properties:
+ * - h: The hue value of the color.
+ * - s: The saturation value of the color.
+ * - l: The lightness value of the color.
+ */
 const rgbToHsl = (r: number, g: number, b: number) => {
   r /= 255;
   g /= 255;

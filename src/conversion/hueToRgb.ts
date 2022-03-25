@@ -1,3 +1,8 @@
+
+/**
+ * Converts HUE amount to one of RGB colors.
+ * @return {Number} A value betwenn 0 and 255.
+ */
 const hueToRgb = (p: number, q: number, t: number) => {
   if (t < 0) {
     t += 1;

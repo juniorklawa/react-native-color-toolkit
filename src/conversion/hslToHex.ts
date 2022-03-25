@@ -1,6 +1,13 @@
 import hueToRgb from './hueToRgb';
 import toHex from './singleHex';
 
+/**
+ * Converts an HSL color value to HEX.
+ * @param  {Number} h The hue value.
+ * @param  {Number} s The saturation value.
+ * @param  {Number} l The lightness value.
+ * @return {String} The HEX color value.
+ */
 const hslToHex = (h: number, s: number, l: number) => {
   h /= 360;
   s /= 100;
