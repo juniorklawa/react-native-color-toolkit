@@ -1,4 +1,4 @@
-import { desaturate } from "..";
+import { desaturate } from '..';
 
 /**
  * @param  {String} color A 6 character hex color.

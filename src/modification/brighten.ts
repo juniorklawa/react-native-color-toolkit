@@ -1,5 +1,5 @@
-import hexToRgb from "../conversion/hexToRgb";
-import { rgbToHex } from "../conversion/rgbToHex";
+import hexToRgb from '../conversion/hexToRgb';
+import rgbToHex from '../conversion/rgbToHex';
 
 /**
  * @param  {String} color A 6 character hex color.

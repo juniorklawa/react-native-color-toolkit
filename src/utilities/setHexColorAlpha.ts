@@ -1,5 +1,6 @@
 /**
  * @param  {String} color A hex color.
+ * @param  {Number} alpha The alpha percentage.
  * @return {String} The hex color with the given alpha value.
  */
 const setHexColorAlpha = (color: string, alpha: number): string => {

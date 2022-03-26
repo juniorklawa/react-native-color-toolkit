@@ -1,5 +1,5 @@
 /**
- * @param  {String} color A 6 character hex color.
+ * @param  {String} color A string hex color.
  * @return {Number} The alpha of the color.
  */
 const getHexColorAlpha = (hex: string): number => {

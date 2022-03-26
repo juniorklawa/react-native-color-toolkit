@@ -1,7 +1,7 @@
 const getNewPercentage = (
   amount: number,
   relativeTo: number,
-  type: 'lighten' | 'darken',
+  type: 'lighten' | 'darken'
 ) => {
   const newPercentage = amount * relativeTo;
   return type === 'lighten'

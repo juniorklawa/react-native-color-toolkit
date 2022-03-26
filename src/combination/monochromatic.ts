@@ -1,7 +1,7 @@
-import hexToRgb from "../conversion/hexToRgb";
-import hslToHex from "../conversion/hslToHex";
-import rgbToHsl from "../conversion/rgbToHsl";
-import getNewPercentage from "../utilities/getRelativePercentage";
+import hexToRgb from '../conversion/hexToRgb';
+import hslToHex from '../conversion/hslToHex';
+import rgbToHsl from '../conversion/rgbToHsl';
+import getNewPercentage from '../utilities/getRelativePercentage';
 
 /**
  * @param  {String} color A 6 character hex color.
@@ -15,7 +15,7 @@ const monochromatic = (color: string) => {
   const newHsl = { h, s, l };
   const colorsArr = [];
   for (let i = 0; i < pieces; i++) {
-    newHsl.l = getNewPercentage((1 / pieces) * i, l, "darken");
+    newHsl.l = getNewPercentage((1 / pieces) * i, l, 'darken');
     colorsArr.push(hslToHex(newHsl.h, newHsl.s, newHsl.l));
   }
   return colorsArr;

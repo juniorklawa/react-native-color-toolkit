@@ -31,7 +31,7 @@ const rgbToHsl = (r: number, g: number, b: number) => {
       ? (max - min) / (2 * l)
       : (max - min) / (2 - 2 * l);
 
-  return {h: h * 60, s: s * 100, l: l * 100};
+  return { h: h * 60, s: s * 100, l: l * 100 };
 };
 
 export default rgbToHsl;

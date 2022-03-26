@@ -1,4 +1,3 @@
-
 /**
  * Converts HUE amount to one of RGB colors.
  * @return {Number} A value betwenn 0 and 255.
