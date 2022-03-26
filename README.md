@@ -18,6 +18,9 @@ A well-tested library written in typescript to help mobile developers who care a
 </p>
 <br />
 
+<p align="center">
+Inspired by <a href="https://github.com/bgrins/TinyColor"> TinyColor </>
+</p>
 
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
