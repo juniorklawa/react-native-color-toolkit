@@ -4,7 +4,7 @@
 
 <h1 align="center"> React Native Color Toolkit</h1>
 <p align="center">
-A well-tested library written in typescript to help mobile developers who care about color.
+A well-tested library written in typescript to with a lot of tools to help mobile developers who care about color.
 </p>
 
 	
