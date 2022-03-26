@@ -47,7 +47,7 @@ npm i react-native-color-toolkit
 A function that returns  a brighter color given a color and a percentage (from 0 to 1).
 
 ### Example
-```javascript
+```jsx
 import { brighten } from  'react-native-color-toolkit';
 
 ...
@@ -70,7 +70,7 @@ import { brighten } from  'react-native-color-toolkit';
 A function that returns  a darker color given a color and a percentage (from 0 to 1).
 
 ### Example
-```javascript
+```jsx
 import { darken } from  'react-native-color-toolkit';
 
 ...
@@ -93,7 +93,7 @@ import { darken } from  'react-native-color-toolkit';
 A function that returns a desaturated color given a color and a percentage (from 0 to 1).
 
 ### Example
-```javascript
+```jsx
 import { desaturate } from  'react-native-color-toolkit';
 
 ...
@@ -116,7 +116,7 @@ import { desaturate } from  'react-native-color-toolkit';
 A function that returns a greyscaled color given a color.
 
 ### Example
-```javascript
+```jsx
 import { greyscale } from  'react-native-color-toolkit';
 
 ...
@@ -139,7 +139,7 @@ import { greyscale } from  'react-native-color-toolkit';
 A function that returns a lightened color given a color and a percentage (from 0 to 1).
 
 ### Example
-```javascript
+```jsx
 import { lighten } from  'react-native-color-toolkit';
 
 ...
@@ -162,7 +162,7 @@ import { lighten } from  'react-native-color-toolkit';
 A function that returns a saturated color given a color and a percentage (from 0 to 1).
 
 ### Example
-```javascript
+```jsx
 import { lighten } from  'react-native-color-toolkit';
 
 ...
@@ -190,7 +190,7 @@ import { lighten } from  'react-native-color-toolkit';
 A function that returns an array (length = 3) of colors that are analogous to the given color.
 
 ### Example
-```javascript
+```jsx
 import { analogous } from  'react-native-color-toolkit';
 
 ...
@@ -218,7 +218,7 @@ import { analogous } from  'react-native-color-toolkit';
 A function that returns a complement of a given color.
 
 ### Example
-```javascript
+```jsx
 import { complement } from  'react-native-color-toolkit';
 
 ...
@@ -241,7 +241,7 @@ import { complement } from  'react-native-color-toolkit';
 A function that returns an array (length = 6) of colors that are monochromatic to the given color.
 
 ### Example
-```javascript
+```jsx
 import { monochromatic } from  'react-native-color-toolkit';
 
 ...
@@ -280,7 +280,7 @@ import { monochromatic } from  'react-native-color-toolkit';
 A function that returns an array (length = 3) of colors that are split complement to the given color.
 
 ### Example
-```javascript
+```jsx
 import { splitComplementary } from  'react-native-color-toolkit';
 
 ...
@@ -308,7 +308,7 @@ import { splitComplementary } from  'react-native-color-toolkit';
 A function that returns an array (length = 4) of colors that that are tetrad to the given color.
 
 ### Example
-```javascript
+```jsx
 import { tetrad } from  'react-native-color-toolkit';
 
 ...
@@ -342,7 +342,7 @@ import { tetrad } from  'react-native-color-toolkit';
 A function that returns an array (length = 3) of colors that that are tetrad to the given color.
 
 ### Example
-```javascript
+```jsx
 import { triad } from  'react-native-color-toolkit';
 
 ...
@@ -404,7 +404,7 @@ import { triad } from  'react-native-color-toolkit';
 
 You can use material color pallete out of the box like in the example below:
 
-```javascript
+```jsx
 import { Colors } from  'react-native-color-toolkit';
 
 ...
