@@ -1,4 +1,4 @@
-import isDark from "./isDark";
+import isDark from './isDark';
 
 /**
  * @param  {String} color A 6 character hex color.
