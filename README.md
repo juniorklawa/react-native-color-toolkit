@@ -371,7 +371,7 @@ import { triad } from  'react-native-color-toolkit';
 # Conversion Functions
 
 | name  | args | return | 
-|-----|-----|-----| - |
+|-----|-----|-----|
 | `hexToPercentageRgb ` | color: string (hexadecimal) | An object with r,g,b percentage values.
 | `hexToRgb` | color: string (hexadecimal) | An object with r,g,b values.
 | `hslToHex` | h: number, s: number, l: number| A string with the hex value.
@@ -386,7 +386,7 @@ import { triad } from  'react-native-color-toolkit';
 # Utility Functions
 
 | name  | args | return | 
-|-----|-----|-----| - |
+|-----|-----|-----|
 | `getBrightness ` | color: string (hexadecimal) | The brightness number of the given color.
 | `getHexColorAlpha` | hex: string (hexadecimal) | The alpha number of the given color.
 | `setHexColorAlpha` | color: string (hexadecimal), alpha: number (0 to 1) | The hexadecimal value with the given alpha value.
