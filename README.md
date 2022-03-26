@@ -18,7 +18,6 @@ A well-tested library written in typescript to help mobile developers who care a
 </p>
 <br />
 
-
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
 
