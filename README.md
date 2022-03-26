@@ -23,9 +23,10 @@ A well-tested library written in typescript to help mobile developers who care a
 # Table of Contents
 
 * [Installation](#installation)
-* [Usage](#usage)
-* [Example](#example-with-all-modes)
-* [Props](#props)
+* [Modification Functions](#modification-functions)
+* [Conversion Functions](#conversion-functions)
+* [Utility Functions](#utility-functions)
+* [Material Colors Palette](#material-colors-pallete)
 * [Contributing](#contributing)
 
 
@@ -397,11 +398,49 @@ import { triad } from  'react-native-color-toolkit';
 | `singleHex` | x: number | The hexadecimal value of a given number.
 
 
-
 <br />
 
+# Material Colors Pallete
+
+You can use material color pallete out of the box like in the example below:
+
+```javascript
+import { Colors } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  Colors.red[500]}]}/>
+	<Text  style={styles.subtitle}>Red 500</Text>
+</View>
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  Colors.red[300]}]}/>
+		<Text  style={styles.subtitle}>Red 300</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  Colors.red[700]}]}/>
+		<Text  style={styles.subtitle}>Red 700</Text>
+	</View>
+</View>
+
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  Colors.red.A400}]}/>
+		<Text  style={styles.subtitle}>Red A400</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  Colors.red.A700}]}/>
+		<Text  style={styles.subtitle}>Red A700</Text>
+	</View>
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/KwYV5Im.png)
 
 
+<br />
 
 # Contributing
 
