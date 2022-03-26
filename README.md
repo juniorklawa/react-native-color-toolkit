@@ -13,6 +13,7 @@ A well-tested library written in typescript to help mobile developers who care a
   <a href="https://www.npmjs.com/package/react-native-color-toolkit"><img src="https://img.shields.io/npm/v/react-native-color-toolkit.svg"></a>
   <a href="https://github.com/juniorklawa/react-native-auto-size-text"><img src="https://img.shields.io/github/stars/juniorklawa/react-native-color-toolkit"></a>
   <a href="https://www.npmjs.com/package/react-native-color-toolkit"><img src="https://img.shields.io/npm/dm/react-native-color-toolkit.svg"></a>
+  <a href="https://github.com/juniorklawa/react-native-color-toolkit/actions"><img src="https://github.com/juniorklawa/react-native-color-toolkit/workflows/PR/badge.svg"></a>
    <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
