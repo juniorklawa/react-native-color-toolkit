@@ -18,6 +18,7 @@ A well-tested library written in typescript to help mobile developers who care a
 </p>
 <br />
 
+
 <!-- TABLE OF CONTENTS -->
 # Table of Contents
 
@@ -181,6 +182,225 @@ import { lighten } from  'react-native-color-toolkit';
 
 
 <br />
+
+# Combination Functions
+
+## analogous(color: string)
+A function that returns an array (length = 3) of colors that are analogous to the given color.
+
+### Example
+```javascript
+import { analogous } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  analogous('#880E4F')[0]}]}/>
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  analogous('#880E4F')[1]}]}/>
+		<Text  style={styles.subtitle}>Analogous color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  analogous('#880E4F')[2]}]}/>
+		<Text  style={styles.subtitle}>Analogous color</Text>
+	</View>
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/JnDirHJ.png)
+
+## complement(color: string)
+A function that returns a complement of a given color.
+
+### Example
+```javascript
+import { complement } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View  style={[styles.box, {backgroundColor: '#1E88E5'}]} />
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View  style={[styles.box, {backgroundColor: complement('#1E88E5')}]} />
+	<Text  style={styles.subtitle}>Modified color</Text>
+</View>
+
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/tEdKDIo.png)
+
+## monochromatic(color: string)
+A function that returns an array (length = 6) of colors that are monochromatic to the given color.
+
+### Example
+```javascript
+import { monochromatic } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  monochromatic('#7E57C2')[0]}]}/>
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  monochromatic('#7E57C2')[1]}]}/>
+		<Text  style={styles.subtitle}>Monochromatic color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  monochromatic('#7E57C2')[2]}]}/>
+		<Text  style={styles.subtitle}>Monochromatic color</Text>
+	</View>
+</View>
+
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  monochromatic('#7E57C2')[3]}]}/>
+		<Text  style={styles.subtitle}>Monochromatic color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  monochromatic('#7E57C2')[4]}]}/>
+		<Text  style={styles.subtitle}>Monochromatic color</Text>
+	</View>
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/Z44YiDS.png)
+
+## splitComplementary(color: string)
+A function that returns an array (length = 3) of colors that are split complement to the given color.
+
+### Example
+```javascript
+import { splitComplementary } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  splitComplementary('#01579B')[0]}]}/>
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  splitComplementary('#01579B')[1]}]}/>
+		<Text  style={styles.subtitle}>Modified color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  splitComplementary('#01579B')[2]}]}/>
+		<Text  style={styles.subtitle}>Modified color</Text>
+	</View>
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/WUblWwI.png)
+
+## tetrad(color: string)
+A function that returns an array (length = 4) of colors that that are tetrad to the given color.
+
+### Example
+```javascript
+import { tetrad } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  tetrad('#00BCD4')[0]}]}/>
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  tetrad('#00BCD4')[1]}]}/>
+		<Text  style={styles.subtitle}>Tetrad color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  tetrad('#00BCD4')[2]}]}/>
+		<Text  style={styles.subtitle}>Tetrad color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  tetrad('#00BCD4')[3]}]}/>
+		<Text  style={styles.subtitle}>Tetrad color</Text>
+	</View>
+	
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/Phl7QTE.png)
+
+## triad(color: string)
+A function that returns an array (length = 3) of colors that that are tetrad to the given color.
+
+### Example
+```javascript
+import { triad } from  'react-native-color-toolkit';
+
+...
+
+<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+	<View style={[styles.box, {backgroundColor:  triad('#E53935')[0]}]}/>
+	<Text  style={styles.subtitle}>Original color</Text>
+</View>
+
+<View  style={styles.mainRow}>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View style={[styles.box, {backgroundColor:  triad('#E53935')[1]}]}/>
+		<Text  style={styles.subtitle}>Triad color</Text>
+	</View>
+	<View  style={{justifyContent:  'center', alignItems:  'center'}}>
+		<View  style={[styles.box, {backgroundColor:  triad('#E53935')[2]}]}/>
+		<Text  style={styles.subtitle}>Triad color</Text>
+	</View>
+</View>
+...
+```
+### Result
+![enter image description here](https://i.imgur.com/KivIKim.png)
+
+<br />
+
+# Conversion Functions
+
+| name  | args | return | 
+|-----|-----|-----| - |
+| `hexToPercentageRgb ` | color: string (hexadecimal) | An object with r,g,b percentage values.
+| `hexToRgb` | color: string (hexadecimal) | An object with r,g,b values.
+| `hslToHex` | h: number, s: number, l: number| A string with the hex value.
+| `hueToRgb` | p: number, q: number, t: number | The rgb value.
+| `rgbToHex` | r: number, g: number, b: number | The hexadecimal value from a rgb color.
+| `rgbToHsl` | r: number, g: number, b: number | The HSL value from a rgb color.
+| `singleHex` | x: number | The hexadecimal value of a given number.
+
+
+<br />
+
+# Utility Functions
+
+| name  | args | return | 
+|-----|-----|-----| - |
+| `getBrightness ` | color: string (hexadecimal) | The brightness number of the given color.
+| `getHexColorAlpha` | hex: string (hexadecimal) | The alpha number of the given color.
+| `setHexColorAlpha` | color: string (hexadecimal), alpha: number (0 to 1) | The hexadecimal value with the given alpha value.
+| `isDark` | color: string (hexadecimal)| true if the color is dark, false otherwise.
+| `isLight` | color: string (hexadecimal) | true if the color is light, false otherwise.
+| `random` | nope | A random hex color.
+| `rgbToHsl` | r: number, g: number, b: number | The HSL value from a rgb color.
+| `singleHex` | x: number | The hexadecimal value of a given number.
+
+
+
+<br />
+
+
 
 
 # Contributing
